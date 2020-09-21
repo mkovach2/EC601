@@ -72,3 +72,7 @@ def value_iteration_for_gamblers(p_h, theta=0.0001, discount_factor=1.0):
         policy[s] = best_action
     
     return policy, V
+
+
+if __name__ == '__main__':
+    pTest, Vtest = value_iteration_for_gamblers(0.5)
